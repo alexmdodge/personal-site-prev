@@ -1,0 +1,251 @@
+/* * * * * * * * * * * * * Main Font * * * * * * * * * * * */
+
+/* Soure Sans Regular */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/source-sans/sspro-regular.otf');
+    src: url('../fonts/source-sans/sspro-regular.otf') format('opentype'),
+         url('../fonts/source-sans/sspro-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Soure Sans Bold */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/source-sans/sspro-bold.otf');
+    src: url('../fonts/source-sans/sspro-bold.otf') format('opentype'),
+         url('../fonts/source-sans/sspro-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Soure Sans Light */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/source-sans/sspro-light.otf');
+    src: url('../fonts/source-sans/sspro-light.otf') format('opentype'),
+         url('../fonts/source-sans/sspro-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Soure Sans Boldest */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/source-sans/sspro-bolder.otf');
+    src: url('../fonts/source-sans/sspro-bolder.otf') format('opentype'),
+         url('../fonts/source-sans/sspro-bolder.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Soure Sans Lightest */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/source-sans/sspro-lighter.otf');
+    src: url('../fonts/source-sans/sspro-lighter.otf') format('opentype'),
+         url('../fonts/source-sans/sspro-lighter.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* Dickie */
+@font-face {
+    font-family: 'Dickie';
+    src: url('dickie.ttf');
+    src: url('dickie.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Learning Curve */
+@font-face {
+    font-family: 'Learning Curve Pro';
+    src: url('learningcurve.otf');
+    src: url('learningcurve.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-italic-webfont.eot');
+    src: url('leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-italic-webfont.woff') format('woff'),
+         url('leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('leaguegothic-condensed-regular-webfont.eot');
+    src: url('leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('leaguegothic-condensed-italic-webfont.eot');
+    src: url('leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/** Icon Font Setup **/
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icons/icomoon.eot?-p43hy4');
+    src:url('../fonts/icons/icomoon.eot?#iefix-p43hy4') format('embedded-opentype'),
+        url('../fonts/icons/icomoon.ttf?-p43hy4') format('truetype'),
+        url('../fonts/icons/icomoon.woff?-p43hy4') format('woff'),
+        url('../fonts/icons/icomoon.svg?-p43hy4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e600";
+}
+.icon-pencil:before {
+    content: "\e618";
+}
+.icon-pencil2:before {
+    content: "\e601";
+}
+.icon-camera:before {
+    content: "\e602";
+}
+.icon-music:before {
+    content: "\e603";
+}
+.icon-play:before {
+    content: "\e604";
+}
+.icon-book:before {
+    content: "\e619";
+}
+.icon-file-text2:before {
+    content: "\e605";
+}
+.icon-price-tag:before {
+    content: "\e606";
+}
+.icon-phone:before {
+    content: "\e607";
+}
+.icon-envelop:before {
+    content: "\e608";
+}
+.icon-pushpin:before {
+    content: "\e609";
+}
+.icon-location:before {
+    content: "\e60a";
+}
+.icon-users:before {
+    content: "\e60b";
+}
+.icon-spinner3:before {
+    content: "\e60c";
+}
+.icon-enlarge2:before {
+    content: "\e60d";
+}
+.icon-shrink2:before {
+    content: "\e60e";
+}
+.icon-link:before {
+    content: "\e60f";
+}
+.icon-bookmark:before {
+    content: "\e610";
+}
+.icon-cross:before {
+    content: "\e611";
+}
+.icon-checkmark:before {
+    content: "\e612";
+}
+.icon-google-plus:before {
+    content: "\e613";
+}
+.icon-facebook:before {
+    content: "\e614";
+}
+.icon-twitter:before {
+    content: "\e615";
+}
+.icon-feed2:before {
+    content: "\e61a";
+}
+.icon-youtube3:before {
+    content: "\e616";
+}
+.icon-github2:before {
+    content: "\e617";
+}
+.icon-linkedin2:before {
+    content: "\e61b";
+}
+.icon-stackoverflow:before {
+    content: "\e61c";
+}
+.icon-pinterest:before {
+    content: "\e61d";
+}
+.icon-bulb:before {
+    content: "\e61e";
+}
+.icon-mail:before {
+    content: "\e61f";
+}
+.icon-study:before {
+    content: "\e620";
+}
+.icon-fire:before {
+    content: "\e621";
+}

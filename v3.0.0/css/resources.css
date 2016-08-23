@@ -1,0 +1,162 @@
+/* CSS Document*/
+@import url("fonts.css");
+@import url("header.css");
+
+/** Table of Contents
+ *
+ * 1.0 Common Elements
+ * 2.0 Small Display
+ * 2.1 Normal Display
+ *
+ */
+
+/** 1.0 Common Elements **/
+  .main-container {
+     padding-top: 2em;
+     background-color: rgba(0,0,0,0.7);
+  }
+
+/** 2.0 Small Display **/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape),
+only screen and (max-width: 500px) {
+   .text-container {
+      margin: 1em;
+   }
+
+   .icon-file-text2 {font-size: 1.5em; color: #ccc;}
+}
+
+/** 2.1 Normal Display **/
+@media only screen and (min-width: 501px) {
+   /* This stretches and contains the background image, even when screen resized */
+   html, body, .main-container, .column {
+      min-width: 1200px;
+   }
+
+   .text-container {
+      width: 960px;
+      margin: 40px auto;
+   }
+}
+
+.main-resource-link {
+   font-size: 150%;
+   position: relative;
+   display: block;
+   padding-left: 5px;
+   padding-right: 5px;
+   text-decoration: none;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: #ddd;
+   
+   -webkit-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -moz-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -o-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+
+.resource-text {
+   font-size: 120%;
+   font-weight: 300;
+}
+
+.main-resource-link:link, .main-resource-link:visited {
+   color: #ddd;
+}
+
+.main-resource-link:hover, .main-resource-link:active {
+   color: #fff;
+   padding-left: 10px;
+   padding-right: 0px;
+}
+
+.course-resource {list-style-type: none;}
+.course-resource li {padding: 5px;}
+.course-resource-link {
+   font-size: 1.5em;
+   position: relative;
+   padding-left: 5px;
+   padding-right: 5px;
+   text-decoration: none;
+   color: #ddd;
+   
+   -webkit-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -moz-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -o-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+
+.resource-text {
+   font-size: 120%;
+   font-weight: 300;
+}
+
+.course-resource-link:link, .course-resource-link:visited {
+   color: #ddd;
+}
+
+.course-resource-link:hover, .course-resource-link:active {
+   color: #fff;
+   padding-left: 10px;
+   padding-right: 0px;
+}
+
+.footer-content {
+   border-top: 4px solid #fff;
+}

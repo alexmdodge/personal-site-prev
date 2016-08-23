@@ -1,0 +1,20 @@
+.footer-container {
+   /* Stretch across the width of page */
+   width: 100%;
+   padding: 0.5em 0;
+   text-align: center;
+	background-image: url(../images/textures/txt.png);
+   background-repeat: repeat;
+   
+   -webkit-box-shadow: 0px -5px 15px -3px rgba(0,0,0,0.6);
+   -moz-box-shadow: 0px -5px 15px -3px rgba(0,0,0,0.6);
+   box-shadow: 0px -5px 15px -3px rgba(0,0,0,0.6);
+}
+
+#copyright, #contribute { display: inline; }
+#copyright { font-weight: bold; }
+
+.end {
+   font-size: 80%;
+   color: #ddd;
+}

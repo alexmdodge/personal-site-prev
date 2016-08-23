@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'corbertregular';
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot');
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.woff') format('woff'),
+         url('../fonts/corbert/Corbert-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.svg#corbertregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-image: url("../images/bg3.png");
+	background-repeat: repeat;
+	font-family: corbertregular, Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+	text-align: center;
+	margin: 10px 0px 0px 0px;	
+	padding: 0px;
+}
+
+div.text {
+	background-color: rgba(64, 64, 64, .3);
+	border-style: solid;
+	border-width: 6px 6px 6px 6px;
+	border-radius:25px;
+	margin: 20px 100px 20px 100px;
+	padding: 10px 10px 10px 10px;
+}
+
+/* --------------------  Here is the definition for the menu buttons ---------------------------*/
+#back {
+    background:url("../images/backS.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 170px;
+    height: 170px;
+    background-position: 0px 0px;
+}
+
+#back span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+	
+	background:url("../images/backS.png") no-repeat;
+    background-position: 0px -170px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+#back:hover span {
+	opacity: 1;
+}
+
+
+
+/* smart image enlarger starts here */
+.ienlarger {
+	display: inline-block;
+	padding-bottom: 5px; /* space between thumbs. Don't change this to margin */
+	padding-right: 5px; /* space between thumbs and wrapping text when there is any text around it */
+}
+
+.ienlarger a { 
+	display: inline-block;
+	text-decoration: none;
+}
+
+.ienlarger a:hover{
+ 	position:relative;
+}
+
+.ienlarger span img {
+	border: 1px solid #FFFFFF; /* adds a border around the image */
+	margin-bottom: 8px; /* pushes the text down from the image */
+}
+
+.ienlarger a span {  /* this is for the large image and the caption */
+	position: absolute;
+	display:none;
+	color: #FFFFFF; /* caption text colour */
+	text-decoration: none;
+	font-family: corbertregular, Georgia, Arial, Helvetica, sans-serif;
+	font-size: 13px; /* caption text size */
+	background-color: #000000;
+	border-radius:10px;
+	font-weight: bold;
+	padding: 10px 10px 13px 10px;
+}
+
+.ienlarger img { /* leave or IE puts a border around links */
+border-width: 0;
+}
+
+.ienlarger a:hover span { 
+	display:block;
+	top: 100px; /* means the pop-up's top is 50px away from thumb's top */
+	right: -40px; /* means the pop-up's left is 90px far from the thumb's left */
+	z-index: 100;
+	opacity: 1;
+	
+
+}
+
+.resize_thumb {
+	width: 170px; /* enter desired thumb width here */
+	height : auto;
+}
+
+
+
+

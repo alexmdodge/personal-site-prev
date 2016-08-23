@@ -1,0 +1,85 @@
+<template>
+   <div class="main-container">
+      <header>
+         <div id="construction-head">
+            <small>This site is undergoing some crazy changes. Checking out <a target="_blank" id="aurelia" href="http://aurelia.io/">Aurelia</a></small>
+         </div>
+      </header>
+
+      <section class="main-section">
+         <div class="container-fluid">
+            <div class="row">
+               <img src="images/alex-brand.png" alt="Alex Dodge Brand" id="alex-brand" class="hvr-grow-rotate alex-brand col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-xs-offset-3 col-xs-6">
+            </div>
+         </div>
+         
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-offset-0 col-lg-12 col-xs-offset-1 col-xs-10">
+                  <h1 id="brand-title" class="brand-title">Web Dev and Educator</h1>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <footer id="main-footer">
+         <div class="container-fluid">
+            <div class="row">
+               
+               <div class="social-nav col-lg-offset-4 col-lg-4 col-xs-offset-3 col-xs-6">
+                  <div class="row">
+                     <div class="social-icon col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 col-sm-offset-3 col-sm-2 col-xs-4">
+                        <a target="_blank" class="main-social-icon" href="https://github.com/alexmdodge" data-toggle="tooltip" data-placement="top" title="Projects">
+                           <span class="fa fa-github hvr-rotate"></span>
+                        </a>
+                     </div>
+
+                     <div class="social-icon col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" class="main-social-icon" href="https://dribbble.com/alexmdodge" data-toggle="tooltip" data-placement="top" title="Designs">
+                           <span class="fa fa-dribbble hvr-rotate"></span>
+                        </a>
+                     </div>
+
+                    <div class="social-icon col-lg-2 col-md-2 col-sm-2 col-xs-4">
+                        <a target="_blank" class="main-social-icon" href="https://twitter.com/alexmdodge" data-toggle="tooltip" data-placement="top" title="Follow Me">
+                           <span class="fa fa-twitter hvr-rotate"></span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div id="footer-copy" class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-1 col-xs-10">
+                  <small class="footer-copy">Alex Dodge <b>2016</b></small>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- JS Loaded at Bottom for Optimal Speed -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap-sprockets.js"></script>
+      <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+      <script src="bower_components/velocity/velocity.js"></script>
+      <script src="js/dodge.js"></script>
+   </div>
+
+
+   <h1> ${heading} </h1>
+
+   <form submit.trigger="addTodo()">
+      <input type="text" value.bind="todoDescription">
+      <button type="submit"> Add Todo </button>
+   </form>
+
+   <ul>
+      <li repeat.for="todo of todos">
+         <input type="checkbox" checked.bind="todo.done">
+         <span css="text-decoration: ${todo.done ? 'line-through' : 'none'}">
+            ${todo.description}
+         </span>
+
+         <button click.trigger="removeTodo(todo)"> Remove </button>
+      </li>
+   </ul>
+
+</template>

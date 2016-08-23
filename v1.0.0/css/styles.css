@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'corbertregular';
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot');
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.woff') format('woff'),
+         url('../fonts/corbert/Corbert-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.svg#corbertregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background-image: url("../images/bg3.png");
+	background-repeat: repeat;
+	font-family: corbertregular, Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+	text-align: center;
+	margin: 0px;	
+	padding: 0px;
+}
+
+div.bottom {
+	margin-top: 40px;
+}
+
+div.main {
+	margin: 20px 0px 20px 0px;
+	padding: 5px 5px 5px 5px;
+	background-color:rgba(64, 64, 64, .25);
+	background-repeat: repeat;
+
+	border-style: groove;
+	border-width: 6px 0px 6px 0px;
+}
+
+
+
+
+/* --------------------  Here is the definition for the menu buttons ---------------------------*/
+#education {
+    background:url("../images/educationS.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 220px;
+    height: 220px;
+    background-position: 0px 0px;
+}
+
+#education span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+	
+	background:url("../images/educationS.png") no-repeat;
+    background-position: 0px -220px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+#education:hover span {
+	opacity: 1;
+}
+
+
+
+
+
+/* --------------------  Here is the definition for the menu buttons ---------------------------*/
+#experience {
+    background:url("../images/experienceS.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 220px;
+    height: 220px;
+    background-position: 0px 0px;
+}
+
+#experience span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+	
+	background:url("../images/experienceS.png") no-repeat;
+    background-position: 0px -220px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+#experience:hover span {
+	opacity: 1;
+}
+
+
+
+
+/* --------------------  Here is the definition for the menu buttons ---------------------------*/
+#choice {
+    background:url("../images/choiceS.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 220px;
+    height: 220px;
+    background-position: 0px 0px;
+}
+
+#choice span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+	
+	background:url("../images/choiceS.png") no-repeat;
+    background-position: 0px -220px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+#choice:hover span {
+	opacity: 1;
+}
+
+
+
+
+/* --------------------  Here is the definition for the menu buttons ---------------------------*/
+#future {
+    background:url("../images/futureS.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 220px;
+    height: 220px;
+    background-position: 0px 0px;
+}
+
+#future span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+	
+	background:url("../images/futureS.png") no-repeat;
+    background-position: 0px -220px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+#future:hover span {
+	opacity: 1;
+}
+
+
+
+
+
+/* --------------------  Here is the definition for the menu buttons ---------------------------*/
+#quality {
+    background:url("../images/qualityS.png") no-repeat;
+    display: inline-block;
+    position: relative;
+    text-indent: -9999px;
+    width: 220px;
+    height: 220px;
+    background-position: 0px 0px;
+}
+
+#quality span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;  
+	
+	background:url("../images/qualityS.png") no-repeat;
+    background-position: 0px -220px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+}
+
+#quality:hover span {
+	opacity: 1;
+}

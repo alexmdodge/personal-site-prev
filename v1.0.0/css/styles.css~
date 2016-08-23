@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'corbertregular';
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot');
+    src: url('../fonts/corbert/Corbert-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.woff') format('woff'),
+         url('../fonts/corbert/Corbert-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/corbert/Corbert-Regular-webfont.svg#corbertregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	color: #ffffff;
+	background: #413f3b url("../images/bg.jpg");
+	background-repeat: repeat;
+	font-family: corbertregular, Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+	margin: 0px;
+	text-align: center;
+}
+
+a {
+	color: #779992;
+	text-decoration: none;
+}
+
+.social {
+	margin-right: 200px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.header {
+    padding-bottom: 5px;
+	border-top: 1.5px solid #ffffff;
+	border-bottom: 1.5px solid #ffffff;
+	padding-top: 5px;
+	height: 60px;
+	background: rgba(64, 64, 64, .25);
+}
+
+.nav {
+	float: right;
+	font-family: Helvetica, Arial, sans-serif;
+	padding: 12px 0px 0px 0px;
+	text-align: right;}
+	
+/* --------------------  Here is the definition for the menu buttons --------------------------- */
+a#b-home {
+	height: 36px;
+	background-image: url("../images/bHomeS.png");
+        text-indent: -9999px;
+	border-bottom: 4px solid #7BBAA4;
+	display: inline-block;}
+a#b-home {
+	width: 120px;
+	background-position: 0px 0px;
+}
+
+a#b-home:hover {
+	background-position: 0px -36px;
+	border-bottom: 4px solid #E3E3E3;
+}
+
+a#b-home:active {
+	background-position: 0px -72px;
+}
+
+a#b-goal {
+	height: 36px;
+	background-image: url("../images/bGoalS.png");
+	border-bottom: 4px solid #757575;
+        text-indent: -9999px;
+	display: inline-block;}
+a#b-goal {
+	width: 120px;
+	background-position: 0px 0px;
+}
+
+a#b-goal:hover {
+	background-position: 0px -36px;
+	border-bottom: 4px solid #E3E3E3;
+}
+
+a#b-goal:active {
+	background-position: 0px -72px;
+}
+
+a#b-about {
+	height: 36px;
+	background-image: url("../images/bAboutS.png");
+	border-bottom: 4px solid #757575;
+    text-indent: -9999px;
+	display: inline-block;}
+a#b-about {
+	width: 120px;
+	background-position: 0px 0px;
+}
+
+a#b-about:hover {
+	background-position: 0px -36px;
+	border-bottom: 4px solid #E3E3E3;
+}
+
+a#b-about:active {
+	background-position: 0px -72px;
+}
+
+a#b-contact {
+	height: 36px;
+	background-image: url("../images/bContactS.png");
+    text-indent: -9999px;
+	border-bottom: 4px solid #757575;
+	display: inline-block;}
+a#b-contact {
+	width: 120px;
+	background-position: 0px 0px;
+}
+
+a#b-contact:hover {
+	background-position: 0px -36px;
+	border-bottom: 4px solid #E3E3E3;
+}
+
+a#b-contact:active {
+	background-position: 0px -72px;
+}
+
+a#b-artist {
+	height: 36px;
+	background-image: url("../images/bArtistsS.png");
+    text-indent: -9999px;
+	border-bottom: 4px solid #757575;
+	display: inline-block;}
+a#b-artist {
+	width: 120px;
+	background-position: 0px 0px;
+}
+
+a#b-artist:hover {
+	background-position: 0px -36px;
+	border-bottom: 4px solid #E3E3E3;
+}
+
+a#b-artist:active {
+	background-position: 0px -72px;
+}
+
+a#b-donate {
+	height: 36px;
+	background-image: url("../images/bDonateS.png");
+    text-indent: -9999px;
+	border-bottom: 4px solid #757575;
+	display: inline-block;}
+a#b-donate {
+	width: 120px;
+	background-position: 0px 0px;
+}
+
+a#b-donate:hover {
+	background-position: 0px -36px;
+	border-bottom: 4px solid #E3E3E3;
+}
+
+a#b-donate:active {
+	background-position: 0px -72px;
+}
+/* --------------------  End Buttons --------------------------- */
+
+
+.wrapper {
+	width: 960px;
+	margin: 0px auto;
+	text-align: left;}
+.logo {
+	margin-top: 5px;
+}
+h1, h2 {
+	font-family: corbertregular, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	color: #779992;}
+.intro {
+	clear: left;
+	font-size: 95%;
+	background: rgba(0, 0, 0, .9);
+	padding: 5px 10px 5px 10px;
+	width: 420px;
+}
+
+.main-story {
+        padding: 20px;
+	margin-top: 20px;
+	background-image: url("../images/polisci.jpg");
+	background-repeat: no-repeat;
+	height: 540px;
+	border-bottom: 1px solid #ffffff;}
+.more-articles {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2.idea-title {
+	text-align: center;
+	margin-top: 100px;
+	padding: 5px 0px 5px 0px;
+	background: rgba(0, 0, 0, .7);
+        width: 250px;
+}
+
+.more-articles p {
+	border-bottom: 1px solid #807c72;
+	padding: 5px 0px 15px 0px;
+	font-size: 80%;}
+.more-articles p:last-child {
+	border-bottom: none;}
+.footer {
+	clear: both;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 5px 10px;}
+.footer p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 75%;
+	text-align: right;}
+.footer a {
+	color: #807c72;}

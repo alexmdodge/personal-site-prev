@@ -1,0 +1,179 @@
+/* CSS Document*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+body {
+	background-image: url("../images/blueBG.png");
+	background-repeat: repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 90%;
+	text-align: center;
+}
+
+.align-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p, h1, h2, h3 {
+	color: #ffffff
+}
+
+a.nav-link  {
+	font-family: 'Amatic SC', cursive;
+	font-size: 190%;
+    padding: 10px 15px 10px 15px;
+    margin: 0px -15px 0px -15px;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+}
+
+/* * * * * * * * * * Main Navigation Setup * * * * * * * * * * * */
+a.nav-link:link {
+	color: #ffffff
+}
+
+a.nav-link:visited {
+	color: #ffffff
+}
+
+a.nav-link:hover {
+	color: #ffffff
+}
+
+a.nav-link:active {
+	color: #000000
+}
+
+.heading {
+	margin: 20px;
+}
+
+.navigation {
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+.bar {
+	background-image: url("../images/navBar2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -100px;
+	height: 250px;
+	position: relative;
+	bottom: 10px;
+}
+/* * * * * * * * * * * * * Drop Down Menu Settings * * * * * * * * * */
+ul.nav-list {
+	text-align: left;
+	display: inline;
+	list-style: none;
+}
+ul.nav-list li {
+	display: inline-block;
+	position: relative;
+	padding: 10px 15px 10px 15px;
+	margin: 10px -4px 10px 0px;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+ul.nav-list li:hover {
+	border-bottom: 5px solid rgba(255,255,255,0.4);
+	color: #202020;
+}
+ul.nav-list li ul {
+    position: absolute;
+    left: -40px;
+    width: 149px;
+    display: none;
+    opacity: 0;
+    z-index: 10;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    -transition: opacity 0.1s;
+}
+ul.nav-list li ul li { 
+    margin-bottom: -10px;
+    background: #555; 
+    display: block; 
+    color: #fff;
+    font-size: 90%;
+}
+
+ul.nav-list li ul li:hover { background: #666; }
+ul.nav-list li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.contents {
+	padding: 12px 0px 12px 0px;
+	position: relative;
+	right: 24px;
+	bottom: 88px;
+}
+
+/* * * * * * * * * * * * * * * Main Document Setup * * * * * * * * * */
+
+#blog {
+	border-bottom: 5px solid white;
+}
+
+#resume {
+	margin-right: 5em;
+}
+
+#works {
+	margin-left: 10em;
+}
+
+/* * * * * * * * * * * * * Content is Kept Here * * * * * * * * * * */
+
+.notice {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border: 2px solid #A0A0A0;
+    border-radius: 3px;
+}
+.entry-1, .entry-2, .entry-3, .entry-4, .entry-5, .entry-6,
+.entry-7, .entry-8, .entry-9, .entry-10 {
+    background-color: rgba(40, 40, 40, 0.4);
+    width: 960px;
+    padding: 5px 15px 5px 15px;
+    margin: 15px auto 15px auto;
+    border-radius: 3px;
+    -moz-box-shadow: 0 0 6px #000000;
+    -webkit-box-shadow: 0 0 6px #000000;
+    box-shadow: 0 0 6px #000000;
+}
+
+#title-1, #info-1, #title-2, #info-2, #title-3, #info-3,
+#title-4, #info-4, #title-5, #info-5, #title-6, #info-6,
+#title-7, #info-7, #title-8, #info-8, #title-9, #info-9,
+#title-10, #info-10 {
+    text-align: justify;
+}
+
+.footer {
+    font-size: 80%;
+    width: 960px;
+    border-top: 1px solid white;
+    margin: 10em auto 3px auto;
+}
+
+

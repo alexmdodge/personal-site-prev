@@ -1,0 +1,51 @@
+.social-icons {
+	display: inline-block;
+	float: right;
+	padding: 0.8em 3em 0;
+}
+
+.social {
+   /* No longer need text indent: 9999px*/
+   text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	
+	/* Need relative because each span will absolute 
+	over the left upper corner*/
+	display: inline-block;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	
+	opacity: 1;
+	background: url(../images/social/social-update.png) no-repeat;
+	background-size: 256px 96px;
+	-webkit-transition: opacity 0.25s;
+	-moz-transition:    opacity 0.25s;
+	-o-transition:      opacity 0.25s;
+	transition:         opacity 0.25s;
+}
+
+.social span {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(../images/social/social-update.png) no-repeat;
+   background-size: 256px 96px;
+	opacity: 0;
+	-webkit-transition: opacity 0.25s;
+	-moz-transition:    opacity 0.25s;
+	-o-transition:      opacity 0.25s;
+	transition:         opacity 0.25s;
+}
+
+.social:hover span {opacity: 1;}
+
+.twitter { background-position: -32px 0;} 
+.link { background-position: -64px 0; }
+.google { background-position: -96px 0;} 
+.youtube { background-position: -126px 0;}
+
+.twitter span { background-position: -32px -32px;} 
+.link span { background-position: -64px -32px; }
+.google span{ background-position: -96px -32px;}
+.youtube span { background-position: -126px -32px;}  

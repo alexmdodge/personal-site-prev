@@ -1,0 +1,11 @@
+project_type = :stand_alone
+preferred_syntax = :sass
+http_path = '/'
+css_dir = 'app/css'
+sass_dir = 'app/css/sass'
+images_dir = 'app/images'
+fonts_dir = 'app/css/fonts'
+javascripts_dir = 'app/js'
+relative_assets = true
+line_comments = false
+output_style = :compressed

@@ -1,0 +1,292 @@
+/* CSS Document*/
+@import url("fonts.css");
+@import url("header.css");
+
+/** Table of Contents
+ *
+ * 1.0 Common Elements
+ * 2.0 Small Display
+ * 2.1 Normal Display
+ *
+ */
+
+/** 1.0 Common Elements **/
+  .main-container {
+     padding-top: 2em;
+     background-color: rgba(0,0,0,0.7);
+  }
+
+/** 2.0 Small Display **/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape),
+only screen and (max-width: 500px) {
+	.project-container {
+		margin: 0 1em;
+      position: relative;
+      padding: 0;
+	}
+
+	.project {
+		border-radius: 2px;
+      background-color: #222;
+      margin-bottom: 20px;
+      padding: 10px;
+	}
+
+	.project-title {
+		z-index: 2;
+		margin: 15px 5px 5px;;
+		border-radius: 2px;
+		text-transform: uppercase;
+		color: #333;
+		padding: 10px;
+		background-color: #ccc;
+	}
+
+	.pre-date, .date {
+		font-weight: bold;
+		text-transform: uppercase;
+		display: inline-block;
+		width: 100px;
+		text-align: center;
+
+	}
+
+	.inner-date {
+		margin: -21px 10px -20px;
+	}
+
+	.pre-date {
+	   padding: 5px 5px 5px 2px;
+		margin-left: 4px;
+		margin-right: -18px;
+		background-color: rgba(53, 89, 98, 1);
+		border-bottom-left-radius: 2px;
+	}
+
+	.date {
+		padding: 5px;
+		margin-left: 0;
+		background-color: rgba(196, 130, 81, 1);
+		border-bottom-right-radius: 2px;
+	}
+
+	.overview {
+		padding: 0px 10px;
+	}
+
+	.title-sub {
+		color: #333;
+		background-color: #ccc;
+		padding: 5px 10px;
+		border-radius: 2px;
+		text-transform: uppercase;
+	}
+
+	.goals, .goal-list {
+		padding: 0px 10px;
+	}
+
+	.progress {padding: 0 10px;}
+
+	.archive-nav {
+		color: #333;
+		padding: 20px;
+	   margin: 10px 0 20px;
+	   border-radius: 2px;
+		background-color: #ccc;
+	   
+	   -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	   -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	   -o-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	   box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	}
+}
+
+/** 2.1 Normal Display **/
+@media only screen and (min-width: 501px) {
+   /* This stretches and contains the background image, even when screen resized */
+   html, body, .main-container, .column {
+      min-width: 1200px;
+   }
+
+	.project-container {
+		position: relative;
+	   width: 960px;
+		padding: 0;
+		margin: 0 auto;
+		
+		/* Clear fix for divs so you don't have to set constant height */
+	   content:"";
+	   display:table;
+	   clear:both;
+	}
+
+	.project, .archive-nav { float: left; }
+
+	.project {
+		width: 560px;
+		padding: 0px 10px 20px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		background-color: #222;
+		border-radius: 2px;
+	}
+
+	.project-title {
+		z-index: 2;
+		margin: 15px 5px 5px;;
+		border-radius: 2px;
+		text-transform: uppercase;
+		color: #333;
+		padding: 10px;
+		background-color: #ccc;
+	}
+
+	.pre-date, .date {
+		font-weight: bold;
+		text-transform: uppercase;
+		display: inline-block;
+		width: 100px;
+		text-align: center;
+
+	}
+
+	.inner-date {
+		margin: -21px 10px -20px;
+	}
+
+	.pre-date {
+	   padding: 5px 5px 5px 2px;
+		margin-left: 4px;
+		margin-right: -18px;
+		background-color: rgba(53, 89, 98, 1);
+		border-bottom-left-radius: 2px;
+	}
+
+	.date {
+		padding: 5px;
+		margin-left: 0;
+		background-color: rgba(196, 130, 81, 1);
+		border-bottom-right-radius: 2px;
+	}
+
+	.overview {
+		padding: 0px 10px;
+	}
+
+	.title-sub {
+		color: #333;
+		background-color: #ccc;
+		padding: 5px 10px;
+		border-radius: 2px;
+		text-transform: uppercase;
+	}
+
+	.goals, .goal-list {
+		padding: 0px 10px;
+	}
+
+	.progress {padding: 0 10px;}
+
+	.archive-nav {
+		color: #333;
+		width: 280px;
+		padding: 20px;
+	   margin-left: 10px;
+	   border-radius: 2px;
+		background-color: #ccc;
+	   
+	   -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	   -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	   -o-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	   box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	}
+}
+
+
+
+/* This link animation covers the sub navigation title
+* * * * * * * * * * * * * * * * * * * * * * * Simple Link * * * * * * * * * * * * * * * * * * * * */
+.simple-link {
+   position: relative;
+   text-decoration: none;
+   font-weight: bold;
+   color: #ddd;
+   
+	-webkit-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -moz-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -o-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.simple-link:link, .simple-link:visited {color: #ddd;}
+.simple-link:hover, .simple-link:active {color: #fff;}
+
+.title {
+   text-transform: uppercase;
+   border-bottom: solid #bbb 1px;
+   padding-bottom: 5px;
+   margin: 0px;
+}
+
+.inner { color: #333;}
+.inner:link, .inner:visited {color: #333;}
+.inner:hover, .inner:active {color: #666;}
+
+.footer-content {
+   border-top: 4px solid #fff;
+}

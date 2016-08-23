@@ -1,0 +1,216 @@
+/* CSS Document*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+body {
+	background-image: url("../images/blueBG.png");
+	background-repeat: repeat;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 90%;
+	text-align: center;
+}
+
+.align-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p, h1, h2, h3 {
+	color: #ffffff
+}
+
+a.nav-link  {
+	font-family: 'Amatic SC', cursive;
+	font-size: 190%;
+    padding: 10px 15px 10px 15px;
+    margin: 0px -15px 0px -15px;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+}
+
+/* * * * * * * * * * Main Navigation Setup * * * * * * * * * * * */
+a.nav-link:link {
+	color: #ffffff
+}
+
+a.nav-link:visited {
+	color: #ffffff
+}
+
+a.nav-link:hover {
+	color: #ffffff
+}
+
+a.nav-link:active {
+	color: #000000
+}
+
+.heading {
+	margin: 20px;
+}
+
+.navigation {
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+.bar {
+	background-image: url("../images/navBar2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -100px;
+	height: 250px;
+	position: relative;
+	bottom: 10px;
+}
+/* * * * * * * * * * * * * Drop Down Menu Settings * * * * * * * * * */
+ul.nav-list {
+	text-align: left;
+	display: inline;
+	list-style: none;
+}
+ul.nav-list li {
+	display: inline-block;
+	position: relative;
+	padding: 10px 15px 10px 15px;
+	margin: 10px -4px 10px 0px;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+ul.nav-list li:hover {
+	border-bottom: 5px solid rgba(255,255,255,0.4);
+	color: #202020;
+}
+ul.nav-list li ul {
+    position: absolute;
+    left: -40px;
+    width: 149px;
+    display: none;
+    opacity: 0;
+    z-index: 10;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.1s;
+    -moz-transition: opacity 0.1s;
+    -ms-transition: opacity 0.1s;
+    -o-transition: opacity 0.1s;
+    -transition: opacity 0.1s;
+}
+ul.nav-list li ul li { 
+    margin-bottom: -10px;
+    background: #555; 
+    display: block; 
+    color: #fff;
+    font-size: 90%;
+}
+
+ul.nav-list li ul li:hover { background: #666; }
+ul.nav-list li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.contents {
+	padding: 12px 0px 12px 0px;
+	position: relative;
+	right: 24px;
+	bottom: 88px;
+}
+
+/* * * * * * * * * * * * * * * Main Document Setup * * * * * * * * * */
+
+#contact {
+	border-bottom: 5px solid white;
+}
+
+#resume {
+	margin-right: 5em;
+}
+
+#works {
+	margin-left: 10em;
+}
+
+.intro {
+	text-align: justify;
+	background-color: rgba(50,50,50,0.5);
+	margin: -10px auto 20px auto;
+	width: 960px;
+	padding: 4px 20px 4px 20px;
+	border-radius: 3px;
+	-moz-box-shadow: inset 0 0 6px #2C2C2C;
+    -webkit-box-shadow: inset 0 0 6px #2C2C2C;
+    box-shadow: inset 0 0 6px #2C2C2C;
+}
+
+h2 {
+	font-size: 100%;
+}
+
+#contact-field {
+	background-color: rgba(200,200,200,0.5);
+	width: 620px;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	padding: 20px;
+	text-align: left;
+	margin: auto;
+	-moz-box-shadow: 0 0 6px #2C2C2C;
+    -webkit-box-shadow: 0 0 6px #2C2C2C;
+    box-shadow: 0 0 6px #2C2C2C;
+}
+
+#contact-legend {
+	background-color: #efefef;
+	border: 1px solid #dcdcdc;
+	border-radius: 3px;
+	padding: 10px 20px;
+	text-align: left;
+	text-transform: upppercase;
+}
+
+div.form-area {
+	margin: 10px;
+	padding-bottom:10px;
+	width:620px;
+}
+
+.title {
+	float: left;
+	width: 100px;
+	text-align:right;
+	padding-right: 10px;
+}
+
+textarea {
+	width: 500px;
+	height: 300px;
+}
+
+button {
+    visibility: hidden;
+}
+
+#mail {
+    width: 50px;
+    background-color: rgba(75, 92, 184, 0.7);
+    margin-left: 40px;
+    border-radius: 3px;
+}
+
+.footer {
+    font-size: 80%;
+    width: 960px;
+    border-top: 1px solid white;
+    margin: 10em auto 3px auto;
+}
+

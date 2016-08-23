@@ -1,0 +1,234 @@
+/* CSS Document*/
+@import url("fonts.css");
+@import url("header.css");
+
+/** Table of Contents
+ *
+ * 1.0 Common Elements
+ * 2.0 Small Display
+ * 2.1 Normal Display
+ *
+ */
+
+/** 1.0 Common Elements **/
+  .main-container {
+     padding-top: 2em;
+     background-color: rgba(0,0,0,0.7);
+  }
+
+/** 2.0 Small Display **/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait),
+only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait),
+screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape),
+only screen and (max-width: 500px) {
+
+}
+
+/** 2.1 Normal Display **/
+@media only screen and (min-width: 501px) {
+   /* This stretches and contains the background image, even when screen resized */
+   html, body, .main-container, .column {
+      min-width: 1200px;
+   }
+
+}
+
+.intro-container {
+   background-color: rgba(30,30,30,0.9);
+   padding: 10px 30px;
+   border-radius: 2px;
+}
+
+.resource-container {
+   position: relative;
+   margin: 0 auto;
+   width: 960px;
+}
+
+.connect {
+   position: absolute;
+   margin-left: 450px;
+   z-index: -1;
+   text-indent: 9999px;
+   overflow: hidden;
+   background-color: rgba(60,60,60,0.7);
+   width: 60px;
+   height: 200px;
+}
+
+.math {
+   border-bottom: dashed 1px #aaa;
+   margin-top: 0;
+   padding: 10px 0px;
+}
+
+.unit {
+   background-color: #ccc;
+   padding: 10px 20px;
+   border-radius: 2px;
+   margin: 40px auto;
+   color: #333;
+   
+   /* Clear fix for divs so you don't have to set constant height */
+   content:"";
+   display:table;
+   clear:both;
+}
+
+.title {
+   text-transform: uppercase;
+}
+
+.section {
+   border-bottom: dashed 1px #333;
+   padding-bottom: 5px;
+   width: 245px;
+   text-align: center;
+   margin: 10px auto 20px;
+}
+
+.strands, .outline {
+   font-size: 110%;
+   font-weight: 400;
+}
+
+.strands{
+   list-style-type: square;
+}
+
+.unit-intro {
+   margin: 20px 0px 0px;
+}
+
+.line {
+   border-bottom: dashed 1px #333;
+   padding-bottom: 10px;
+}
+
+.unit-title {
+   position: absolute;
+   display: inline-block;
+   text-transform: uppercase;
+   padding: 10px;
+   margin-top: -40px;
+   border-radius: 2px;
+   background-color: #333;
+   color: #eee;
+   text-align: center;
+}
+
+.course-section {
+   float: left;
+   width: 280px;
+   margin: 0 12px;
+   text-align: center;
+}
+
+/* This link animation covers the sub navigation title
+* * * * * * * * * * * * * * * * * * * * * * * Simple Link * * * * * * * * * * * * * * * * * * * * */
+.major-link {
+   position: relative;
+   text-decoration: none;
+   font-weight: bold;
+   color: #333;
+   
+   -webkit-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -moz-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -o-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.major-link:link, .major-link:visited {color: #333;}
+.major-link:hover, .major-link:active {color: #666;}
+
+/* This link animation covers the sub navigation title
+* * * * * * * * * * * * * * * * * * * * * * * Simple Link * * * * * * * * * * * * * * * * * * * * */
+.simple-link {
+   position: relative;
+   display: block;
+   text-decoration: none;
+   font-weight: 400;
+   color: #333;
+   
+   -webkit-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -moz-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   -o-transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+   transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+.simple-link:link, .simple-link:visited {color: #333;}
+.simple-link:hover, .simple-link:active {color: #666;}
+
+/* This link animation covers the sub navigation title
+* * * * * * * * * * * * * * * * * * * * * * * Simple Link * * * * * * * * * * * * * * * * * * * * */
+.button {
+   background-color: #aaa;
+   font-size: 150%;
+   margin: 20px auto;
+   padding: 10px;
+   border-radius: 3px;
+   text-transform: uppercase;
+   text-align: center;
+   display: block;
+   width: 180px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #333;
+}
+.button:link, .button:visited {color: #333;}
+.button:hover, .button:active {color: #ccc; background-color: #333;}
+
+.footer-content {
+   border-top: 3px solid #fff;
+}
