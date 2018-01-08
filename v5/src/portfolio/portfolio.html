@@ -1,0 +1,102 @@
+<template>
+   
+<!-- 
+   Author: Alex Dodge | Copyright 2016
+   Date: October 17, 2016
+
+-->
+
+   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   *                       
+   *                     Section 1 Portfolio Top
+   *
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   --> 
+   <section class="section-portfolio">
+
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xs-12 col-md-offset-2 col-md-8">
+               <div class="portfolio-info">
+                  <h2 class="portfolio-info-title">Portfolio</h2>
+
+                  <p class="portfolio-info-description">
+                     I've created website, applications, games, graphics and more. For detailed overviews and
+                     case studies have a look at the projects section. If you would like a breakdown of all
+                     front-end and back-end development skills I'm familiar with take a look at
+                     the skills section. If you would like to read and download my resume, head to the resume section!
+                  </p>
+               </div>
+            </div>
+         </div>
+
+         <div class="portfolio-navigation row">
+            <div class="col-xs-12 col-sm-6 col-md-offset-3 col-md-2 ">
+               <a route-href="route: projects" class="portfolio-navigation-projects">
+                  <span class="portfolio-navigation-link">Projects</span>
+               </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-2 ">
+               <a route-href="route: resume" class="portfolio-navigation-resume">
+                  <span class="portfolio-navigation-link">Resume</span>
+               </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-2 ">
+               <a route-href="route: skills" class="portfolio-navigation-skills">
+                  <span class="portfolio-navigation-link">Skills</span>
+               </a>
+            </div>
+
+         </div>
+
+         <div class="portfolio-navigation-fixed-container hidden-xs">
+            <ul class="lower-navigation-fixed">
+               <li>
+                  <a route-href="route: projects" class="navigation-fixed">
+                     Projects
+                  </a>
+               </li>   
+               
+               <li class="middle-divider"></li>
+
+               <li>
+                  <a route-href="route: resume" class="navigation-fixed">
+                     Resume
+                  </a>
+               </li>
+
+               <li class="middle-divider"></li>               
+
+               <li>
+                  <a route-href="route: skills" class="navigation-fixed">
+                     Skills
+                  </a>
+               </li>
+            </ul>
+         </div>
+
+      </div> <!-- End of About Bootstrap Container -->
+
+   </section>
+
+
+
+
+
+   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   *                       
+   *                       Section 2 Portfolio Navigation
+   *
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   --> 
+   <section class="section-portfolio-topics">
+
+      <div class="container-fluid"><div class="row">
+         <router-view class="portfolio-topics"></router-view>
+      </div></div> <!-- End of Skills Bootstrap Container -->
+
+   </section>
+
+</template>

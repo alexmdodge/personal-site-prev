@@ -1,0 +1,511 @@
+@import "alex-variables";
+
+@media only screen and (min-width : 320px) {
+   .portfolio-project-selection {
+      padding: 20px 4vw;
+   }
+
+   .portfolio-info {
+     padding-left: 0px;
+   }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+   .portfolio-project-selection {
+      padding: 20px 8vw;
+   }
+
+   .portfolio-info {
+     padding-left: 60px;
+   }
+
+   .section-portfolio-cases {
+
+      .cases-container {
+         padding: 30px 0px;
+      }
+
+      .cases-proposal-src {
+         width: 80%;
+         padding-top: 30%;
+      }
+
+      .cases-proposal-game {
+         display: block;
+         margin: 0 auto;
+      }
+
+      .cases-process-src {
+         width: 80%;
+         padding-top: 30%;
+         padding-left: 50px;
+
+      }
+      
+      .cases-results-src {
+         width: 80%;
+         padding-top: 30%;
+      }
+   }
+}
+
+@media only screen and (min-width : 992px) {
+   .portfolio-project-selection {
+      padding: 20px 8vw;
+   }
+
+   .section-portfolio-cases {
+
+      .cases-container {
+         padding: 30px 0px;
+      }
+
+      .cases-proposal-src {
+         width: 70%;
+         padding-top: 20px;
+      }
+
+      .cases-proposal-game {
+         display: block;
+         margin: 0 auto;
+      }
+
+      .cases-process-src {
+         width: 70%;
+         padding-top: 20px;
+         padding-left: 50px;
+
+      }
+      
+      .cases-results-src {
+         width: 60%;
+         padding-top: 20px;
+      }
+   }
+}
+
+
+
+.section-portfolio {
+   @include background-overlay();
+   padding: 100px 10px;
+   color: #eee;
+
+   .portfolio-info {
+      text-align: left;
+   }
+
+   .portfolio-divider {
+      width: 60%;
+      height: 4px;
+   }
+
+   .portfolio-info-description {
+      margin: 20px auto;
+      line-height: 1.5;
+   }
+
+   .portfolio-navigation {
+      text-align: center;
+      margin: 60px 0px 0px;
+
+      &-resume,
+      &-projects,
+      &-skills,
+      &-education {
+         border-radius: 0px;
+         color: #eee;
+         cursor: pointer;
+         padding: 10px;
+         display: inline-block;
+         margin: 10px auto;
+         -webkit-transform: skew(-9deg);
+         -moz-transform: skew(-9deg);
+         -o-transform: skew(-9deg);
+         transform: skew(-9deg);
+         text-transform: uppercase;
+         width: 100%;
+      }
+
+      &-projects,
+      &-skills {
+         background-color: $primary-colour;
+         transition: background-color 0.15s ease-in-out;
+
+         &:hover {
+            background-color: $third-colour;
+            transition: background-color 0.15s ease-in-out;
+
+            span {
+               color: #fff;
+            }
+         }
+      }
+
+      &-resume,
+      &-education {
+         background-color: $primary-colour-light;
+         transition: background-color 0.15s ease-in-out;
+
+         &:hover {
+            background-color: $third-colour;
+            transition: background-color 0.15s ease-in-out;
+
+            span {
+               color: #fff;
+            }
+         }
+      }
+
+      .portfolio-navigation-link {
+         display: inline-block;
+         color: #ddd;
+         cursor: pointer;
+         text-decoration: none;
+         -webkit-transform: skew(9deg);
+         -moz-transform: skew(9deg);
+         -o-transform: skew(9deg);
+         transform: skew(9deg);
+
+         &:visited,&:active,&:focus {
+            color: #eee;
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+.section-portfolio-topics {
+   background-color: #ccc;
+   padding: 20px 0px 0px;
+   color: #333;
+
+   .main-breadcrumbs {
+      padding: 10px 40px;
+      color: #333;
+
+      a {
+         color: #333;
+         text-decoration: none;
+
+         &:visited, &:focus, &:active {
+            color: #333;
+         }
+
+         &:hover {
+            color: #555;
+         }
+      }
+   }
+   
+
+   .section-portfolio-project {
+      padding: 30px 0px 50px;
+
+
+      .portfolio-project-title {
+         text-transform: uppercase;
+      }
+
+      .portfolio-project-filter {
+
+         label {
+            font-weight: 400;
+         }
+
+         select {
+            border-radius: 3px;
+            margin-left: 10px;
+
+            option {
+               padding: 5px;
+               text-align: center;
+            }
+         }
+      }
+
+      .portfolio-project-selection {
+
+         .portfolio-projects-selection-apex,
+         .portfolio-projects-selection-student,
+         .portfolio-projects-selection-gridgrind {
+            width: 100%;
+            border-radius: 3px;
+            padding-bottom: 50px;
+            border: 1px solid #777;
+            margin-bottom: 30px;
+         }
+
+         .portfolio-projects-selection-apex {
+            background: $apex-bg no-repeat;
+            background-size: 205%;
+         }
+         .portfolio-projects-selection-student {
+            background: $student-search-bg no-repeat;
+            background-size: 205%;
+         }
+         .portfolio-projects-selection-gridgrind {
+            background: $grid-grind-bg no-repeat;
+            background-size: 205%;
+         }
+
+         .projects-selection-title {
+            color: #eee;
+            font-size: $md-font;
+            font-family: $primary-font;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #333;
+            padding: 30px 0px 40px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+         }
+
+         .projects-selection-study {
+            width: 200px;
+            display: block;
+            font-weight: 500;
+            text-align: center;
+            color: #eee;
+            margin: 70px auto 20px;
+            text-decoration: none;
+
+            &:focus, &:visited, &:active {
+               color: #eee;
+               text-decoration: none;
+            }
+         }
+
+         .projects-selection-external {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 3px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: 150px;
+
+            i { color: $primary-colour}
+         }
+      }
+   }
+   
+   .cases-current-arrow {
+      width: 0; 
+      height: 0; 
+      border-left: 80px solid transparent;
+      border-right: 80px solid transparent;
+      margin: -20px auto;
+      border-top: 60px solid #ccc;
+   }
+
+   .section-portfolio-cases {
+      background: linear-gradient(
+         rgba(82,89,110, 0.8), 
+         rgba(82,89,110, 0.8) 
+      ),$cases-apex-bg no-repeat center center;
+      background-size: cover;
+      color: #eee;
+      padding-bottom: 30px;
+   }
+
+   #section-student,
+   #section-gridgrind {
+      display: none;
+   }
+
+
+
+   .section-portfolio-resume {
+      padding: 10px 30px;
+      color: #eee;
+
+      .resume-download {
+         display: block;
+         font-weight: 500;
+         font-family: $primary-font;
+         width: 250px;
+         margin: 0px auto 20px;
+         padding: 10px;
+         text-align: center;
+         color: #eee;
+         text-decoration: none;
+
+         &:visited, &:focus, &:link {
+            color: #eee;
+            text-decoration: none;
+         }
+      }
+
+      .portfolio-resume {
+         padding-bottom: 30px;
+         
+         &-title {
+            color: #333;
+         }
+
+         &-description {
+            color: #333;
+            margin-bottom: 30px
+         }
+
+         &-container-title {
+            background-color: $primary-colour-dark;
+            text-transform: uppercase;
+            padding: 10px 15px;
+            margin-bottom: 0px;
+         }
+
+         .experience-spacing {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+         }
+
+         &-container-info {
+            background-color: $primary-colour;
+            margin-top: 0px;
+            padding: 20px;
+            border-radius: 0;
+            span {
+               font-weight: bold;
+               font-family: $primary-font;
+               text-transform: uppercase;
+            }
+
+            ul {
+               padding: 0px 30px;
+            }
+
+            h4 {
+               text-transform: uppercase;
+               font-family: $primary-font;
+               padding: 0px 10px;
+               margin: 0px 10px 10px;
+
+               small {
+                  text-transform: none;
+                  color: lighten($primary-colour-light,20);
+               }
+            }
+         }
+      }
+   }
+
+   .section-portfolio-skills {
+      padding: 10px 10px;
+
+      .portfolio-skills-title {
+         text-transform: uppercase;
+         color: #333;
+      }
+
+      .portfolio-skills-description {
+         color: #333;
+         margin-bottom: 30px;
+      }
+
+      .portfolio-skills-container {
+         margin: 20px auto;
+
+         .skills-extra-dropdown {
+            display: none;
+            background-color: darken($primary-colour-dark,5);
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: $sm-font;
+            position: absolute;
+            color: #eee;
+            list-style: none;
+            left: 15px;
+            top: 68px;
+            padding: 0px;
+            border-radius: 0;
+            width: 93%;
+
+            li {
+               font-family: $primary-font;
+               font-size: 1.2em;
+               padding: 10px 0px;
+               width: 0;
+               white-space: nowrap;
+               background-color: darken($third-colour,10);
+               border-top: 1px solid darken($third-colour,15);
+
+               span {
+                  padding-left: 10px;
+               }
+            }
+         }
+
+         .skills-indicator-level {
+            border-radius: 0;
+            color: #eee;
+            background-color: $primary-colour-dark;
+            z-index: -20;
+            height: 68px;
+            width: 100%;
+
+            .extra-skills {
+               position: absolute;
+               top: 0;
+               right: 15px;
+               cursor: pointer;
+               font-size: $md-font;
+               font-weight: 300;
+               padding: 10px;
+               margin: 15px 15px 0px 0px;
+               background-color: $primary-colour-light;
+               transition: all 0.1s ease-in-out;
+               z-index: 99;
+
+               &:hover {
+                  background-color: lighten($primary-colour-light, 5);
+                  transition: all 0.1s ease-in-out;
+               }
+            }
+         }
+
+         .skills-indicator-slide {
+            border-radius: 0;
+            position: absolute;
+            font-family: $primary-font;
+            left: 0;
+            top: 0;
+            margin-left: 15px;
+            background: linear-gradient($third-colour,darken($third-colour,3));
+            width: 0;
+            height: 68px;
+         }
+
+         .skills-indicator-level-title {
+            font-family: $primary-font;
+            font-weight: 500;
+            font-size: 1.2em;
+            position: absolute;
+            display: inline-block;
+            left: 15px;
+            right: 0;
+            border-radius: 0;
+            color: #eee;
+            text-transform: uppercase;
+            padding: 20px;
+            margin-bottom: 0px;
+            width: 50%;
+         }
+
+         .skills-indicator-info {
+            border-radius: 0;
+            background-color: $primary-colour;
+            color: #eee;
+            padding: 20px;
+            margin-top: 0px;
+         }
+      }
+   }
+}

@@ -1,0 +1,94 @@
+@import "alex-variables";
+
+.section-blog {
+   @include background-overlay();
+   padding: 100px 10px;
+   color: #eee;
+
+   .blog {
+
+   	&-title {
+   	}
+
+   	&-description {
+   		margin-bottom: 40px 
+
+   	}
+
+   	&-container {
+   		.blog-container-title {
+   			cursor: pointer;
+   			color: #eee;
+   			font-weight: 500;
+   			font-size: $lg-font;
+   			font-family: $primary-font;
+   			text-transform: uppercase;
+			text-decoration: none;
+			padding: 0px;
+			margin: 0px;
+			
+			&:active, &:link, &:visited {
+				color: #eee;
+			}
+
+			&:hover {
+				color: #ccc;
+			}
+   		}
+
+   		.blog-container-stamps {
+   			padding: 0px;
+   			margin-bottom: 15px;
+   		}
+
+			.stamps-author, 
+			.stamps-date,
+			.stamps-read {
+				font-size: $sm-font;
+				border-radius: 0px;
+	         cursor: pointer;
+	         padding: 5px 10px;
+	         margin: 0;
+	         display: inline-block;
+	         -webkit-transform: skew(-9deg);
+	         -moz-transform: skew(-9deg);
+	         -o-transform: skew(-9deg);
+	         transform: skew(-9deg);
+	         text-transform: uppercase;
+
+	         span {
+	         	display: inline-block;
+		         -webkit-transform: skew(9deg);
+		         -moz-transform: skew(9deg);
+		         -o-transform: skew(9deg);
+		         transform: skew(9deg);
+	         }
+			}
+
+			.stamps-author {
+				background-color: $primary-colour;
+
+				&:hover {
+					background-color: lighten($primary-colour,5);
+				}
+			}
+			.stamps-date {
+				background-color: $primary-colour-light;
+
+				&:hover {
+					background-color: lighten($primary-colour-light,5);
+				}
+			}
+			.stamps-read {
+				background-color: darken($third-colour,10);
+
+				&:hover {
+					background-color: darken($third-colour, 5);
+				}
+			}
+
+   		.blog-container-info {
+   		}
+   	}
+   }
+}

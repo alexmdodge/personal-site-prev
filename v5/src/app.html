@@ -1,0 +1,89 @@
+<template>
+
+   <header class="alex-dodge-navigation">
+      <nav class="navbar navbar-default " role="navigation">
+
+         <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-right">
+               <li class="route-link route-link-home nav-active"><a route-href="route: home">Home </a></li>
+               <li class="route-link route-link-about"><a route-href="route: about">About </a></li>
+               <li class="route-link route-link-blog"><a route-href="route: blog">Blog </a></li>
+               <li class="route-link route-link-contact"><a route-href="route: contact">Contact </a></li>
+            </ul>
+         </div>
+
+         <div id="navbar-mobile-click" class="navbar-mobile visible-xs-block">
+            <div id="mobile-bars" class="mobile-no-rotate">
+               <span class="fa fa-bars"></span>
+            </div>
+         </div>
+
+         <div id="navbar-mobile-menu" class=" mobile-closed">
+            <ul class="navbar-mobile-content">
+               <li><a route-href="route: home">Home </a></li>
+               <li><a route-href="route: about">About </a></li>
+               <li><a route-href="route: blog">Blog </a></li>
+               <li><a route-href="route: contact">Contact </a></li>
+            </ul>
+         </div>
+
+      </nav>
+   </header>
+
+   <main>
+      <router-view></router-view>
+   </main>
+
+   <footer>
+
+      <div class="container-fluid">
+         <div class="row"> 
+            <div class="footer-social col-xs-12">
+               <div class="footer-social-center">
+                  <a href="https://ca.linkedin.com/in/malexdodge" class="footer-social-icon" target="_blank">
+                     <i class="fa fa-linkedin"></i> 
+                  </a>
+
+                  <a href="https://twitter.com/alexmdodge" class="footer-social-icon" target="_blank">
+                     <i class="fa fa-twitter"></i> 
+                  </a>
+
+                  <a href="https://github.com/alexmdodge" class="footer-social-icon" target="_blank">
+                     <i class="fa fa-github"></i> 
+                  </a>
+
+                  <a href="https://dribbble.com/alexmdodge" class="footer-social-icon" target="_blank">
+                     <i class="fa fa-dribbble"></i> 
+                  </a>
+
+                  <a href="http://stackoverflow.com/users/3189008/alexmdodge" class="footer-social-icon" target="_blank">
+                     <i class="fa fa-stack-overflow"></i> 
+                  </a>
+               </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="footer-copyright col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4">
+               <img src="assets/img/main-logo.png" alt="Alex Dodge Logo Small" 
+                  class="footer-copyright-logo">
+               <small class="footer-copyright-text">
+                  <span class="footer-copyright-text-name">Alex Dodge</span>
+                  <span class="footer-copyright-text-date">2016</span>
+
+               </small>
+
+               <small class="footer-copyright-acknowledge">
+                  Images were collected from <a href="https://unsplash.com/" target="_blank">Unsplash</a> under the <a href="https://unsplash.com/license" target="_blank">Creative Commons Zero</a> license. Some icons and other graphics were retrieved from <a href="http://file000.flaticon.com/downloads/license/license.pdf" target="_blank">Flaticon</a>.
+               </small>
+            </div>
+         </div>
+      </div> <!-- End of Footer Bootstrap Container -->
+
+      <div id="to-top" class="top-button">
+         <i class="fa fa-chevron-up"></i>
+      </div>
+
+   </footer>
+
+</template>

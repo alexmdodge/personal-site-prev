@@ -1,0 +1,112 @@
+<template>
+   
+<!-- 
+   Author: Alex Dodge | Copyright 2016
+   Date: October 17, 2016
+
+-->
+
+   <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   *                       
+   *                       Portfolio - Projects
+   *
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   --> 
+   <section class="section-portfolio-project">
+
+      <div class="portfolio-project-crumbs main-breadcrumbs pull-right">
+         <i class="fa fa-caret-right"></i>
+         <a route-href="route: home">home</a> &#47;
+         <a route-href="route: portfolio">portfolio</a> &#47;
+         <a route-href="route: projects">projects</a>
+      </div>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-6">
+               <h2 class="portfolio-project-title">Projects</h2>
+
+               <div class="portfolio-project-filter">
+                  <label for="projects-filter">SHOW</label>
+                  <select name="projects-filter">
+                     <option value="0"> All </option>
+                     <option value="1"> Client Based </option>
+                     <option value="2"> Open Source </option>
+                     <option value="3"> Games </option>
+                  </select>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="portfolio-project-selection row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="portfolio-projects-selection-apex">
+
+                  <div class="projects-selection-title">
+                     Apex Training
+                  </div>
+
+                  <!--  <a route-href="route: apex" class="projects-selection-study button"> -->
+                  <a id="apex" class="projects-selection-study button">
+                     Case Study
+                  </a>
+
+                  <a href="http://apextrainingsystems.ca/" target="_blank" class="projects-selection-external small-button">
+                     <i class="fa fa-globe"></i> Live Site
+                  </a>
+
+               </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <div class="portfolio-projects-selection-student">
+
+                  <div class="projects-selection-title">
+                     Student Search
+                  </div>
+
+                  <!--  <a route-href="route: student-search" class="projects-selection-study button"> -->
+                  <a id="student-search" class="projects-selection-study button">
+                     Case Study
+                  </a>
+                  
+                  <a href="https://www.alexmdodge.ca/demos/student-search/" class="projects-selection-external small-button">
+                     <i class="fa fa-globe"></i> Demo
+                  </a>
+
+               </div>
+            </div>
+
+            <div class="clearfix visible-sm-block visible-xs-block"></div>
+
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-4">
+               <div class="portfolio-projects-selection-gridgrind">
+                  <div class="projects-selection-title">
+                     Grid Grind
+                  </div>
+
+                  <!--  <a route-href="route: student-search" class="projects-selection-study button"> -->
+                  <a id="grid-grind" class="projects-selection-study button">
+                     Overview
+                  </a>
+                  
+                  <a href="https://www.alexmdodge.ca/games/grid-grind/app/" class="projects-selection-external small-button">
+                     <i class="fa fa-globe"></i> Demo
+                  </a>
+               </div>
+            </div>
+         </div>
+
+      </div> <!-- End of portfolio Bootstrap Container -->
+
+   </section>
+
+   <section class="section-projects-case">
+
+      <div class="container-fluid"><div class="row">
+         <router-view class="project-cases"></router-view>
+      </div></div> <!-- End of Skills Bootstrap Container -->
+
+   </section>
+
+</template>

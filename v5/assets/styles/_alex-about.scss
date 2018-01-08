@@ -1,0 +1,291 @@
+@import "alex-variables";
+
+@media only screen and (min-width : 320px) {
+   .section-about {
+      .about-headshot-src {
+         padding: 10vw;
+      }
+   }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+   .section-about {
+      .about-headshot-src {
+         padding: 1vw;
+      }
+   }
+}
+
+
+.section-about {
+   @include background-overlay();
+   padding-top: 10vh;
+   color: #eee;
+
+   .about-headshot-src {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 60px;
+   }
+
+   .about-navigation {
+      text-align: center;
+      margin: 40px 0px 60px;
+
+      &-academic,
+      &-work,
+      &-interest,
+      &-goals {
+         border-radius: 0px;
+         color: #eee;
+         cursor: pointer;
+         font-size: 1.1em;
+         padding: 10px;
+         display: inline-block;
+         -webkit-transform: skew(-9deg);
+         margin: 10px auto;
+         -moz-transform: skew(-9deg);
+         -o-transform: skew(-9deg);
+         transform: skew(-9deg);
+         text-transform: uppercase;
+         width: 100%;
+      }
+
+      &-academic,
+      &-goals {
+         background-color: $primary-colour;
+         transition: background-color 0.15s ease-in-out;
+
+         &:hover {
+            background-color: $third-colour;
+            transition: background-color 0.15s ease-in-out;
+            
+
+            span {
+               color: #fff;
+            }
+         }
+      }
+
+      &-interest,
+      &-work {
+         background-color: $primary-colour-light;
+         transition: background-color 0.15s ease-in-out;
+
+         &:hover {
+            background-color: $third-colour;
+            transition: background-color 0.15s ease-in-out;
+            
+
+            span {
+               color: #fff;
+            }
+         }
+      }
+
+      .about-navigation-link {
+         display: inline-block;
+         color: #ddd;
+         cursor: pointer;
+         font-weight: 500;
+         text-decoration: none;
+         -webkit-transform: skew(9deg);
+         -moz-transform: skew(9deg);
+         -o-transform: skew(9deg);
+         transform: skew(9deg);
+
+         &:visited,&:active,&:focus {
+            color: #eee;
+            text-decoration: none;
+         }
+      }
+   }
+}
+
+.section-about-topics {
+   background-color: #333;
+   padding: 20px 0px;
+   color: #eee;
+
+   .main-breadcrumbs {
+      padding: 10px 40px;
+      color: #eee;
+
+      a {
+         color: #eee;
+         text-decoration: none;
+
+         &:visited, &:focus, &:active {
+            color: #eee;
+         }
+
+         &:hover {
+            color: #ccc;
+         }
+      }
+   }
+   
+
+   .section-about-academic {
+      padding: 30px 0px 50px;
+
+
+      .about-academic-title {
+      }
+
+      .about-academic-description {
+         font-weight: 300;
+         padding-top: 20px;
+      }
+
+      .about-academic-logo-src {
+         width:70%;
+         padding-top: 50px;
+         padding-left: 15%;
+      }
+
+      .about-academic-divider {
+         width: 65%;
+         height: 4px;
+      }
+   }
+
+   .section-about-work {
+      padding: 30px 0px 50px;
+
+
+      .about-work {
+
+         &-title {
+         }
+
+         &-description {
+            font-weight: 300;
+            padding-top: 20px;
+         }
+
+         &-career {
+            font-weight: 300;
+            padding-top: 20px;
+
+            .about-work-career-title {
+               font-weight: 500;
+            }
+
+            .about-work-learned > li {
+               text-decoration: none;
+               list-style-type: none;
+            }
+         }
+
+         &-divider {
+            width: 65%;
+            height: 4px;
+         }
+      }
+   }
+
+   .section-about-interests {
+      padding: 30px 0px 50px;
+
+
+      .about-interests {
+
+         &-divider {
+            width: 65%;
+            height: 4px;
+         }
+
+         &-description {
+            padding-top: 20px;
+            font-weight: 300;
+         }
+
+         &-logo {
+            padding-top: 40px;
+            padding-left: 15%;
+            width: 70%;
+         }
+      }
+   }
+
+   .section-about-goals {
+      padding: 30px 0px 50px;
+
+
+      .about-goals {
+
+         &-title {
+            text-transform: uppercase;
+         }
+
+         &-description {
+            font-weight: 300;
+            padding-top: 20px;
+
+            &-learning > li,
+            &-career > li{
+               text-decoration: none;
+               list-style-type: none;
+               font-weight: 300;
+
+               i { padding-right: 5px;}
+            }
+         }
+
+         &-logo-src {
+            padding: 10vw 0;
+            width: 100%;
+         }
+
+         &-divider {
+            width: 65%;
+            height: 4px;
+         }
+      }
+   }
+}
+
+.section-about-intrigue {
+   background-color: #eee;
+   padding: 50px 10px;
+   color: #333;
+   text-align: center;
+
+   .about-intrigue {
+      &-title {
+         text-transform: uppercase;
+         font-weight: 500;
+      }
+
+      &-info {
+         font-weight: 300;
+      }
+
+      &-image-src {
+         width: 250px;
+         padding: 30px 0px;
+      }
+
+      &-continue {
+         display: block;
+         width: 200px;
+         margin: 30px auto 0px;
+         text-decoration: none;
+         font-family: $primary-font;
+         text-transform: uppercase;
+         color: #eee;
+         font-weight: 500;
+
+         &:focus, &:visited, &:active {
+            color: #eee;
+         }
+      }
+   }
+}

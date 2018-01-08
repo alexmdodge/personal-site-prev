@@ -1,0 +1,161 @@
+@import "alex-variables";
+
+
+@media only screen and (min-width : 320px) {
+	#contact-social {
+		width: 81vw;
+
+		.contact-social-icon {
+			padding: 1.5vw;
+
+			i { font-size: 14vw;}
+		}
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	#contact-social {
+		width: 42vw;
+
+		.contact-social-icon {
+			padding: 0.9vw;
+
+			i { font-size: 7vw;}
+		}
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+.section-contact {
+   @include background-overlay();
+   padding: 30vh 10px 0vh;
+   color: #eee;
+   height: 100vh;
+
+   .contact {
+   	.contact-title {
+   		text-align: center;
+   	}
+
+   	.contact-divider {
+   		width: 60%;
+   		display: block;
+   		margin: 15px auto 40px;
+   		height: 5px;
+   	}
+
+   	#contact-social {
+   		display: block;
+   		margin: 0 auto;
+
+   		.contact-social-icon {
+   			color: #eee;
+   			text-decoration: none;
+
+   			&:active, &:link, &:visited {
+   				color: #eee;
+   			}
+
+   			i {
+   				color: #eee;
+					transition: color 0.2s ease-in-out;
+
+   				&:hover {
+   					color: #ccc;
+   					transition: color 0.2s ease-in-out;
+   				}
+   			}
+   		}
+   	}
+   }
+
+	.success-copy {
+		opacity: 0;
+		color: #eee;
+		text-align: center;
+		text-transform: none;
+	}
+
+	.contact-email-container {
+		background-color: $primary-colour;
+		border-radius: 0px;
+		cursor: pointer;
+		display: block;
+		margin: 60px auto 40px;
+
+		-webkit-transform: skew(-9deg);
+		-moz-transform: skew(-9deg);
+		-o-transform: skew(-9deg);
+		transform: skew(-9deg);
+		text-transform: uppercase;
+		text-align: center;
+		width: 271px;
+		
+		&:hover {
+			background-color: lighten($primary-colour,4);
+		}
+
+		.contact-email {
+			-webkit-transform: skew(9deg);
+			-moz-transform: skew(9deg);
+			-o-transform: skew(9deg);
+			transform: skew(9deg);
+			padding: 10px;
+			color: #eee;
+			text-decoration: none;
+			display: inline-block;
+			width: 206px;
+			font-size: $md-font;
+
+			font-weight: 500;
+
+			i { padding-right: 5px;}
+
+		}
+
+		.inner-copy {
+			background-color: $primary-colour-light;
+			border-radius: 0px;
+			color: #eee;
+			cursor: pointer;
+			display: inline-block;
+
+			i {
+				-webkit-transform: skew(9deg);
+				-moz-transform: skew(9deg);
+				-o-transform: skew(9deg);
+				transform: skew(9deg);
+				padding: 20px;
+				font-size: $md-font;
+			}
+
+			&:hover {
+				background-color: lighten($primary-colour-light,4);
+			}
+
+			&:active {
+				background-color: $primary-colour-dark;
+			}
+
+			text-align: center;
+			width: 60px;
+		}
+
+	}
+
+}

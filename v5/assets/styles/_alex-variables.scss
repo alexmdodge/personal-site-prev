@@ -1,0 +1,74 @@
+/* FONT VARIABLES
+ * 
+ * Primary Font - Used primarily for the headers and highlight sections
+ * Second Font  - Used for all description text and sub-headers
+ */
+ 
+$primary-font: 'Roboto', sans-serif;
+$second-font:  'Raleway', sans-serif;
+
+/* BACKGROUND IMAGES */
+$splash-bg-top:       url("../img/pentagon-bg.png");
+$splash-bg-portfolio: url("../img/splash-bg-portfolio.jpg");
+$about-bg-top:        url("../img/about-me-bg-top.jpg");
+$navigation-bg:       url("../img/navigation-bg.png");
+$portfolio-bg:        url("../img/portfolio-bg.jpg");
+$apex-bg:             url("../img/apex-bg.jpg");
+$student-search-bg:   url("../img/student-search-bg.jpg");
+$grid-grind-bg:       url("../img/grid-grind-bg.jpg");
+$cases-apex-bg:       url("../img/portfolio-section-bg.jpg");
+$blog-bg:             url("../img/blog-bg.jpg");
+$contact-bg:          url("../img/contact-bg.jpg");
+  
+/* COLOUR VARIABLES
+ *
+ * Primary Colour  - A nice navy blue for the primary accent of the site
+ * Second Colour   - A vibrant green used for highlights
+ * Third Colour    - A darker green
+ * Fourth Colour   - A simple white gray for basic emphasis
+ * Fifth Colour    - A darker colour for offset and other emphasis
+ */
+$primary-colour: #3a789d;
+$overlay-colour: rgba(36,61,77,0.8);
+$second-colour:  #79d11f;
+$third-colour:   #7ec241;
+$fourth-colour:  #EBEEE8;
+$fifth-colour:   #555555;
+
+/* HELPFUL MIXINS
+ *
+ * These colours are rgba enabled where the transparency can 
+ * be selected with a function.
+ * 
+ */
+@mixin background-overlay() {
+    background: linear-gradient(
+        $overlay-colour, $overlay-colour
+    ), $splash-bg-top repeat center center;
+}
+
+@mixin primary-bg-rgba($visible-amount) {
+   background-color: rgba(210, 219, 202, $visible-amount);
+}
+
+@mixin second-bg-rgba($visible-amount) {
+   background-color: rgba(121, 209, 31, $visible-amount);
+}
+
+
+/* ACCENT COLOURS */
+$primary-colour-dark:  darken(#3a789d, 10%);
+$primary-colour-light: lighten(#3a789d, 10%);
+$primary-colour-lighter: lighten(#3a789d, 20%);
+
+$second-colour-dark:   darken(#79d11f, 10%);
+$second-colour-light:  lighten(#79d11f, 10%);
+
+
+/* FONT AND SIZE VARIABLES */
+$body-font  : 16px;
+$xxlg-font  : 3.998em;
+$xlg-font   : 2.827em;
+$lg-font    : 1.999em;
+$md-font    : 1.414em;
+$sm-font    : 0.707em;
